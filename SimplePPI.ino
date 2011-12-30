@@ -46,8 +46,7 @@ void setup() {
   pinMode(PPIOnOffPin, INPUT);
   pinMode(LsrSetPin, OUTPUT);
 
-  digitalWrite(LsrCmdPin, HIGH);
-  digitalWrite(XStepPin,LOW);
+  digitalWrite(PPIOnOffPin, HIGH);
   // mase sure laser is off at startup
   digitalWrite(LsrSetPin, LOW);
 }
